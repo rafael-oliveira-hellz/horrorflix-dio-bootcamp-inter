@@ -12,13 +12,15 @@
     <!--owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>HORRORFLIX</title>
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="h_container">
             <h2 class="logo">HORRORFLIX</h2>
             <nav>
                 <a href="./index.html">Inicio</a>
@@ -31,17 +33,43 @@
 
     <main>
         <div class="main_movie">
-            <div class="container">
+            <div class="h_container">
                 <h3 class="title">IT: CAPÍTULO II</h3>
                 <p class="description">Vinte e sete anos após o Clube dos Otários derrotar Pennywise, It está de volta.
                     Agora adultos Os Otários seguiram com suas vidas, mas com os recentes desaparecimentos em Derry,
                     Mike resolve reunir o grupo novamente. Perturbados pelo passado, eles precisam vencer seus medos
                     para destruir Pennywise, que está ainda mais perigoso, de uma vez por todas.</p>
+
                 <div class="buttons">
-                    <button role="button" class="button">
+                    <button role="button" class="button" data-bs-toggle="modal" data-bs-target="#modalFullscreen">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
+
+                    <div class="modal fade show" id="modalFullscreen" tabindex="-1"
+                        aria-labelledby="modalFullscreenLabel" style="display: none;" aria-modal="true" role="dialog">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content opacity">
+                                <div class="modal-header">
+                                    <h5 class="modal-title h1 grey" id="modalFullscreenLabel">IT: CAPÍTULO II</h5>
+                                </div>
+
+                                <div class="modal-body">
+                                    <figure>
+                                        <div class="boxVideo">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL8lQ3X4ZcThLZ8Kj4oZddM05Ncace3pPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </figure>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="#moreInfo" role="button" class="button">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
@@ -77,17 +105,20 @@
 
                             <ol class="people no_image">
                                 <li class="profile">
-                                    <p><a href="https://www.themoviedb.org/person/1113116-andr-s-muschietti" target="_blank">Andy
+                                    <p><a href="https://www.themoviedb.org/person/1113116-andr-s-muschietti"
+                                            target="_blank">Andy
                                             Muschietti</a></p>
                                     <p class="character">Diretor</p>
                                 </li>
                                 <li class="profile">
-                                    <p><a href="https://www.themoviedb.org/person/3027-stephen-king" target="_blank">Stephen King</a>
+                                    <p><a href="https://www.themoviedb.org/person/3027-stephen-king"
+                                            target="_blank">Stephen King</a>
                                     </p>
                                     <p class="character">Escritor</p>
                                 </li>
                                 <li class="profile">
-                                    <p><a href="https://www.themoviedb.org/person/1338249-gary-dauberman" target="_blank">Gary
+                                    <p><a href="https://www.themoviedb.org/person/1338249-gary-dauberman"
+                                            target="_blank">Gary
                                             Dauberman</a></p>
                                     <p class="character">Roteirista</p>
                                 </li>
@@ -131,37 +162,37 @@
                     <img class="movie-box" src="img/mini10.jpg" alt="" srcset="">
                 </div>
             </div>
-    
+
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="movie-box" src="img/mini1.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini11.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini2.jpeg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini12.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini3.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini13.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini4.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini14.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini5.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini15.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini6.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini16.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini7.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini17.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini8.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini18.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini9.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini19.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="movie-box" src="img/mini10.jpg" alt="" srcset="">
+                    <img class="movie-box" src="img/mini20.jpg" alt="" srcset="">
                 </div>
             </div>
         </div>
@@ -169,6 +200,9 @@
 
     <footer>Basecamp Javascript @ Digital Innovation One || Rafael de Oliveira Silva</footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
