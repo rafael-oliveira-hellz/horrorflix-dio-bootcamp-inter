@@ -1,0 +1,283 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--black);
+    font-family: 'Arial', Times, serif;
+    color: #FFF;
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    margin-left: 0.3125rem;
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 2.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 0.625rem;
+}
+
+
+header nav a:hover {
+    color: #FFF;
+}
+
+/*filme principal*/
+.main_movie {
+    font-size: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/it-capitulo-2-e1569000005732.jpg') no-repeat;
+
+    height: 475px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_movie .description {
+    margin-top: 0.625rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+    max-width: 45%;
+}
+
+.main_movie .title {
+    margin-top: 10%;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #FFF;
+
+    padding: 0.9375rem 1.875rem;
+    margin-right: 0.9375rem;
+    font-size: 0.75rem;
+
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.button:hover {
+    background-color: #FFF;
+    color: var(--black);
+}
+
+.button i {
+    margin-right: 0.5rem;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.main_movie .moreInfo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.moreInfo:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.moreInfo>div {
+    width: 800px;
+    position: relative;
+    margin: 10% auto;
+    padding: 0.9375rem 1.25rem;
+	border-radius: 0.625rem;
+    background: var(--black);
+    bottom: 100px;
+}
+
+.moreInfo > div > h3 {
+    margin: 2% 0 2% 0;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-align: center;
+}
+
+.moreInfo > div > p {
+    margin-top: 0.625rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+.moreInfo > div > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.25rem 0 1.25rem 0;
+    padding-right: 1.5625rem;
+}
+
+.moreInfo > div > ul li {
+    padding-left: 1.25rem;
+}
+
+.moreInfo > div > ul > div {
+    border: 0.0625rem solid var(--red);
+    padding: 0.3125rem;
+}
+
+.moreInfo > div figure {
+    width: 90%; 
+    min-width: 17.5em; 
+    margin: 0 auto;
+}
+
+.moreInfo > div .boxVideo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    margin:0 auto;
+}
+
+.moreInfo > div .boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.moreInfo ol.people {
+    list-style: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.moreInfo ol.people.no_image {
+    margin-top: 1.25rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.moreInfo ol.people li {
+    background-color: transparent;
+    height: auto;
+    margin-bottom: 0;
+    min-width: 140px;
+}
+
+.moreInfo ol.people.no_image li {
+    width: 33%;
+    flex-basis: 33%;
+    text-align: left;
+    margin-left: 0;
+    box-sizing: border-box;
+    padding-right: 1.25rem;
+}
+
+.moreInfo ol.people li p {
+    font-size: 1em;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.moreInfo ol.people li p a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+.moreInfo ol.people li p.character {
+    font-size: 0.9em;
+}
+
+.close {
+    position: absolute;
+    width: 1.875rem;
+    right: -0.9375rem;
+    top: -1.25rem;
+    text-align: center;
+    line-height: 1.875rem;
+    margin-top: 0.3125rem;
+    background: var(--red);
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #8d0000;
+    text-decoration: none;
+    -moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    opacity: .9;
+    background: #fd8288;
+}
+
+.container {
+    margin-left: 1.25rem;
+}
+
+.main_movie .container {
+    width: 70%;
+}
+
+.movie-box {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes {
+    margin-top: 0.3125rem;
+}
+
+footer {
+	width: 100%;
+	background-color: var(--black);
+	padding: 1em;
+	color: #e5e8e8;
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+    letter-spacing: 0.2em;
+}
